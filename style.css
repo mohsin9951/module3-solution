@@ -1,81 +1,62 @@
-/* Basic Typography */
+/* Base typography */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #222;
-  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navbar Brand */
+/* Highlighted background for brand, menu, headings */
+.highlighted {
+  background-color: #d9d9d9; /* light gray highlight */
+  border-radius: 4px;
+  padding: 6px 10px;
+  display: inline-block;
+}
+
+/* Navbar brand */
 .navbar-brand {
   font-weight: 700;
   font-size: 24px;
+  padding: 10px 15px;
 }
 
-/* Menu Row Buttons */
-.menu-row {
-  background-color: #f0f0f0; /* matches mockup top menu background */
-  padding: 10px 0;
-  margin-bottom: 20px;
-}
-
-.menu-btn {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  background-color: #e0e0e0; /* button background */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.menu-btn:hover {
-  background-color: #d8d8d8;
-}
-
-/* Page Heading */
+/* Page heading */
 .page-heading {
-  margin-top: 18px;
-  margin-bottom: 30px;
-  font-family: Georgia, serif;
+  margin: 20px 0 30px 0;
+  font-family: "Georgia", serif;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
 }
 
-/* Tall Section */
+/* Tall section styling */
 .tall-section {
-  min-height: 1000px;
+  min-height: 1000px; 
   background-color: #f2f2f2;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
-/* Menu Boxes */
+/* Menu boxes styling */
 .menu-box {
-  background-color: #b0b0b0; /* matches the gray in your mockup behind text */
+  background-color: #ffffff;
+  border: 2px solid #d0d0d0;
   padding: 18px;
   margin-bottom: 20px;
   text-align: center;
   min-height: 160px;
-  transition: all 0.3s ease;
 }
 
-.menu-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Spacer Section */
+/* Spacer text section */
 .spacer {
   margin-top: 30px;
-  text-align: center;
-  color: #777;
-  font-size: 16px;
 }
 
-/* Mobile Menu Styles */
+/* Mobile-specific navbar styles */
 @media (max-width: 767px) {
   .navbar-collapse {
     width: 100%;
-    background-color: #efe5d9;
+    background-color: #efe5d9; /* distinct mobile dropdown background */
   }
 
   .navbar-collapse .nav > li > a {
@@ -89,10 +70,9 @@ body {
   }
 }
 
-/* Hide Navbar Collapse on Larger Screens */
+/* Hide collapsed menu on larger screens */
 @media (min-width: 768px) {
   .navbar-collapse {
     display: none !important;
   }
 }
-

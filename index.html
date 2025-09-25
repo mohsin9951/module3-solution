@@ -1,86 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Food, LLC — Our Menu</title>
-
+  <!-- Bootstrap 3 CSS CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Local stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation / Top Menu -->
+  <!-- Navbar -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
+        <!-- Mobile toggle button -->
         <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target="#main-menu">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Food, LLC</a>
+        <!-- Company name -->
+        <a class="navbar-brand highlighted" href="#">Food, LLC</a>
       </div>
 
-      <div class="collapse navbar-collapse visible-xs" id="main-menu" aria-expanded="false">
+      <!-- Mobile dropdown menu -->
+      <div class="collapse navbar-collapse visible-xs" id="main-menu">
         <ul class="nav navbar-nav">
-          <li><a href="#">Chicken</a></li>
-          <li><a href="#">Beef</a></li>
-          <li><a href="#">Sushi</a></li>
+          <li><a class="highlighted" href="#">Chicken</a></li>
+          <li><a class="highlighted" href="#">Beef</a></li>
+          <li><a class="highlighted" href="#">Sushi</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Menu Buttons Row (Desktop / Tablet) -->
-  <div class="container-fluid menu-row">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4"><button class="menu-btn">Chicken</button></div>
-        <div class="col-xs-12 col-sm-4"><button class="menu-btn">Beef</button></div>
-        <div class="col-xs-12 col-sm-4"><button class="menu-btn">Sushi</button></div>
-      </div>
-    </div>
-  </div>
-
   <!-- Tall Section -->
   <div class="container-fluid tall-section">
     <div class="container">
-      <h1 class="text-center page-heading">Our Menu</h1>
+      <!-- Page heading -->
+      <h1 class="text-center page-heading highlighted">Our Menu</h1>
 
+      <!-- Menu grid -->
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <div class="menu-box">
-            <h3>Chicken</h3>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="menu-box highlighted">
+            <h3>Grilled Chicken Special</h3>
             <p>Juicy grilled chicken breast with signature herb glaze and seasonal vegetables.</p>
           </div>
         </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="menu-box">
-            <h3>Beef</h3>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="menu-box highlighted">
+            <h3>Slow-Roasted Beef</h3>
             <p>Slow-roasted beef served with garlic mashed potatoes and house jus.</p>
           </div>
         </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="menu-box">
-            <h3>Sushi</h3>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="menu-box highlighted">
+            <h3>Fresh Sushi Platter</h3>
             <p>Chef's selection of fresh nigiri and maki rolls with wasabi and soy.</p>
           </div>
         </div>
       </div>
 
+      <!-- Spacer text -->
       <div class="spacer">
         <p>Food, LLC is committed to fresh ingredients and fast service. Enjoy our chef-curated menu.</p>
       </div>
     </div>
   </div>
 
+  <!-- Bootstrap scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
-
